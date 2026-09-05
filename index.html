@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tushar Madhyani | Political Analyst</title>
+<meta name="description" content="Portfolio of Tushar Madhyani, aspiring political analyst focused on Indian politics, public policy, governance and geopolitics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{--navy:#071525;--navy2:#102b44;--cream:#f5f0e7;--cream2:#eee7dc;--gold:#c7a76c;--gold2:#dfc590;--white:#fff;--text:#1b2632;--muted:#69727c;--border:rgba(7,21,37,.12)}
+body{font-family:"DM Sans",sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,90%);margin:auto}
+.navbar{position:fixed;top:0;left:0;width:100%;height:80px;z-index:999;background:rgba(7,21,37,.96);backdrop-filter:blur(15px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-container{width:min(1280px,92%);height:100%;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:"Playfair Display",serif;font-size:30px;font-weight:700;color:#fff;letter-spacing:-2px}.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:35px}.nav-links a{color:rgba(255,255,255,.65);font-size:12px;font-weight:600;transition:.3s}.nav-links a:hover,.nav-links a.active{color:var(--gold2)}
+.nav-button{border:1px solid var(--gold);padding:12px 20px;color:var(--gold2);font-size:11px;font-weight:700;transition:.3s}.nav-button:hover{background:var(--gold);color:var(--navy)}
+.menu{display:none;color:#fff;border:none;background:transparent;font-size:22px}
+.hero{min-height:100vh;padding-top:80px;background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:700px;height:700px;right:-250px;top:-100px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0,transparent 35px,rgba(199,167,108,.08) 36px,rgba(199,167,108,.08) 37px)}
+.hero-content{min-height:calc(100vh - 80px);display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:70px;position:relative;z-index:2}
+.eyebrow,.number{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:2.5px}.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:25px}.eyebrow span{width:35px;height:1px;background:var(--gold)}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(48px,6vw,78px);line-height:1.03;letter-spacing:-3px}.hero h1 em{color:var(--gold2)}
+.hero-text>p:not(.eyebrow){max-width:620px;margin:28px 0;color:rgba(255,255,255,.62);font-size:15px;line-height:1.8}.hero-text strong{color:#fff}
+.buttons{display:flex;gap:14px;margin-top:30px}.btn{padding:15px 22px;font-size:11px;font-weight:700;display:inline-flex;align-items:center;gap:10px;transition:.3s}.primary{background:var(--gold);color:var(--navy)}.primary:hover{background:var(--gold2);transform:translateY(-3px)}.outline{border:1px solid rgba(255,255,255,.25);color:#fff}.outline:hover{border-color:var(--gold);color:var(--gold2)}
+.stats{display:flex;gap:45px;margin-top:60px}.stat{display:flex;flex-direction:column}.stat strong{font-family:"Playfair Display",serif;color:var(--gold2);font-size:28px}.stat span{color:rgba(255,255,255,.4);font-size:9px;letter-spacing:1px;text-transform:uppercase}
+.hero-visual{height:580px;display:flex;justify-content:center;align-items:center;position:relative}
+.portrait{width:370px;height:490px;transform:rotate(3deg);border:1px solid rgba(199,167,108,.45);background:linear-gradient(145deg,#12324d,#071525);display:flex;align-items:center;justify-content:center;position:relative}.portrait:after{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.08)}
+.portrait-content{text-align:center;z-index:2}.portrait-icon{width:100px;height:100px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:auto auto 25px;color:var(--gold);font-size:35px}.portrait-content h3{font-family:"Playfair Display",serif;font-size:18px;letter-spacing:3px}.portrait-content p{margin-top:8px;font-size:9px;letter-spacing:2px;color:var(--gold2)}
+.floating{position:absolute;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(15px);padding:15px;display:flex;gap:12px;align-items:center;font-size:11px}.floating i{color:var(--gold)}.float1{top:100px;right:-5px}.float2{bottom:100px;left:-20px}
+.marquee{background:var(--gold);color:var(--navy);overflow:hidden;padding:15px 0}.marquee-track{width:max-content;display:flex;gap:35px;animation:scroll 25s linear infinite}.marquee span{font-size:10px;font-weight:800;letter-spacing:2px}@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.section{padding:120px 0}h2{font-family:"Playfair Display",serif;font-size:clamp(40px,5vw,62px);line-height:1.1;letter-spacing:-2px}h2 span{color:#9c7b42;font-style:italic}
+.about-grid{margin-top:70px;display:grid;grid-template-columns:.9fr 1.1fr;gap:100px;align-items:center}.about-image{height:460px;background:var(--navy);position:relative;overflow:hidden}.about-image:before{content:"";position:absolute;inset:25px;border:1px solid rgba(199,167,108,.4)}
+.columns{height:100%;display:flex;align-items:end;justify-content:center;gap:15px;background:radial-gradient(circle at center,#173a58,#071525 65%)}.column{width:50px;height:65%;border:1px solid rgba(199,167,108,.4)}.column:nth-child(2){height:82%;width:70px}.column:nth-child(3){height:72%}
+.about-content .lead{font-family:"Playfair Display",serif;font-size:25px;line-height:1.5;margin-bottom:25px}.about-content p:not(.lead){color:var(--muted);font-size:14px;line-height:1.9;margin-bottom:18px}.signature{display:flex;align-items:center;gap:15px;margin-top:30px}.signature strong{font-family:"Playfair Display",serif;color:#9c7b42;font-size:35px;font-style:italic}.signature small{color:var(--muted)}
+.expertise{background:var(--cream2)}.section-top{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:60px}.intro{max-width:350px;color:var(--muted);font-size:14px;line-height:1.8}
+.expertise-grid{display:grid;grid-template-columns:repeat(4,1fr)}.expertise-card{min-height:360px;padding:30px;border:1px solid var(--border);position:relative;transition:.4s}.expertise-card:hover{background:var(--navy);color:#fff;transform:translateY(-8px)}.expertise-card .card-no{position:absolute;top:20px;right:20px;color:#9c7b42;font-size:10px}
+.icon{width:55px;height:55px;border:1px solid var(--gold);display:grid;place-items:center;color:#9c7b42;margin-bottom:45px}.expertise-card h3{font-family:"Playfair Display",serif;font-size:24px;margin-bottom:18px}.expertise-card p{color:var(--muted);font-size:13px;line-height:1.8}.expertise-card:hover p{color:rgba(255,255,255,.6)}.explore{position:absolute;bottom:25px;left:30px;color:#9c7b42;font-size:10px;font-weight:700}
+.center{text-align:center}.center p:last-child{color:var(--muted);margin-top:15px;font-size:13px}.research-list{margin-top:65px;border-top:1px solid var(--border)}.research{display:grid;grid-template-columns:70px 1fr 50px;gap:30px;padding:35px 0;border-bottom:1px solid var(--border);transition:.3s}.research:hover{padding-left:15px;background:rgba(199,167,108,.08)}.research-no{font-family:"Playfair Display",serif;font-size:28px;color:#9c7b42}.category{color:#9c7b42;font-size:9px;font-weight:700;letter-spacing:2px}.research h3{font-family:"Playfair Display",serif;font-size:25px;margin:10px 0}.research p{color:var(--muted);max-width:700px;font-size:13px;line-height:1.7}.research-arrow{width:40px;height:40px;border:1px solid var(--border);display:grid;place-items:center;color:#9c7b42}
+.quote{background:var(--navy);color:#fff;padding:120px 0;text-align:center}.quote-mark{color:var(--gold);font-family:"Playfair Display",serif;font-size:80px}blockquote{max-width:850px;margin:-5px auto 0;font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,52px);line-height:1.25}blockquote em{color:var(--gold2)}.quote small{display:block;margin-top:30px;color:rgba(255,255,255,.4);letter-spacing:2px}
+.insights{background:var(--cream2)}.cards{margin-top:60px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:25px}.article{background:var(--cream);border:1px solid var(--border);transition:.4s}.article:hover{transform:translateY(-7px)}.article-image{height:200px;background:linear-gradient(135deg,#071525,#214866);position:relative}.article-image:after{content:"";position:absolute;width:200px;height:200px;right:-40px;top:-40px;border-radius:50%;border:1px solid rgba(199,167,108,.35)}.article-image span{position:absolute;bottom:20px;left:20px;color:var(--gold2);font-size:9px;font-weight:700;letter-spacing:2px;z-index:2}.article-content{padding:25px}.date{color:#9c7b42;font-size:9px;letter-spacing:1px}.article h3{font-family:"Playfair Display",serif;font-size:21px;line-height:1.35;margin:12px 0}.article-content p{color:var(--muted);font-size:12px;line-height:1.7}.read{display:inline-block;margin-top:18px;color:#9c7b42;font-size:10px;font-weight:700}
+.journey-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:100px}.journey-description{color:var(--muted);margin-top:25px;max-width:450px;font-size:14px;line-height:1.8}.timeline{border-left:1px solid var(--border);padding-left:45px}.timeline-item{position:relative;padding-bottom:45px}.dot{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--gold);left:-51px;top:3px}.timeline-item span{color:#9c7b42;font-size:9px;font-weight:700;letter-spacing:1.5px}.timeline-item h3{font-family:"Playfair Display",serif;margin:8px 0;font-size:22px}.timeline-item p{color:var(--muted);font-size:13px;line-height:1.7}
+.skills{background:var(--cream2)}.skills-grid{margin-top:50px;display:grid;grid-template-columns:1fr 1fr;gap:30px 70px}.skill-title{display:flex;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:9px}.skill-title b{color:#9c7b42}.progress{height:4px;background:rgba(7,21,37,.1)}.progress span{display:block;height:100%;background:var(--navy)}
+.contact{background:var(--navy);color:#fff;padding:110px 0}.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:100px;align-items:center}.contact h2{font-size:clamp(45px,5vw,68px)}.contact h2 span{color:var(--gold2)}.contact-description{color:rgba(255,255,255,.55);max-width:540px;font-size:14px;line-height:1.8;margin:25px 0}.email{display:inline-flex;gap:12px;color:var(--gold2);border-bottom:1px solid var(--gold);padding-bottom:8px;font-family:"Playfair Display",serif;font-size:20px}.social{display:flex;align-items:center;gap:18px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.1);transition:.3s}.social:hover{padding-left:10px}.social i{color:var(--gold)}.social-text{flex:1}.social-text small{display:block;color:rgba(255,255,255,.35);font-size:8px;letter-spacing:1.5px}.social-text strong{font-size:13px}
+footer{background:#04101c;color:#fff;padding:30px 0}.footer{display:flex;justify-content:space-between;align-items:center}.footer p{color:rgba(255,255,255,.35);font-size:10px}.top{color:var(--gold2);font-size:10px}
+.hero-text{animation:fadeUp 1s ease}.hero-visual{animation:fadeIn 1.2s ease}@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes fadeIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+@media(max-width:900px){.nav-links{gap:18px}.hero-content{grid-template-columns:1fr;padding:80px 0}.hero{min-height:auto}.hero-visual{height:520px}.about-grid,.journey-grid,.contact-grid{grid-template-columns:1fr;gap:60px}.expertise-grid{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.article:first-child{grid-column:span 2}}
+@media(max-width:650px){.nav-button{display:none}.menu{display:block}.nav-links{display:none;position:absolute;top:80px;left:0;width:100%;background:var(--navy);padding:25px;flex-direction:column;gap:22px}.nav-links.open{display:flex}.hero h1{font-size:45px}.hero-visual{height:450px}.portrait{width:290px;height:390px}.floating{transform:scale(.85)}.float1{right:0}.float2{left:0}.section{padding:80px 0}.section-top{display:block}.intro{margin-top:20px}.expertise-grid,.cards,.skills-grid{grid-template-columns:1fr}.article:first-child{grid-column:span 1}.research{grid-template-columns:40px 1fr;gap:15px}.research-arrow{display:none}.stats{gap:25px;flex-wrap:wrap}.buttons{flex-direction:column}.btn{justify-content:center}.footer{flex-direction:column;gap:18px;text-align:center}}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+<div class="nav-container">
+<a href="#home" class="logo">TM<span>.</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="#home" class="active">Home</a>
+<a href="#about">About</a>
+<a href="#expertise">Expertise</a>
+<a href="#research">Research</a>
+<a href="#insights">Insights</a>
+<a href="#contact">Contact</a>
+</nav>
+<a href="#contact" class="nav-button">LET'S CONNECT</a>
+<button class="menu" id="menu"><i class="fa-solid fa-bars"></i></button>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="container hero-content">
+<div class="hero-text">
+<p class="eyebrow"><span></span>POLITICS • POLICY • PERSPECTIVE</p>
+<h1>Understanding Politics. <em>Explaining</em> Its Impact.</h1>
+<p>I'm <strong>Tushar Madhyani</strong>, an aspiring political analyst passionate about understanding political movements, public policy, governance and the forces shaping modern India.</p>
+<div class="buttons">
+<a href="#research" class="btn primary">Explore My Work <i class="fa-solid fa-arrow-right"></i></a>
+<a href="#about" class="btn outline">About Me</a>
+</div>
+<div class="stats">
+<div class="stat"><strong>04+</strong><span>Research Areas</span></div>
+<div class="stat"><strong>12+</strong><span>Analysis Pieces</span></div>
+<div class="stat"><strong>03</strong><span>Core Interests</span></div>
+</div>
+</div>
+<div class="hero-visual">
+<div class="portrait">
+<div class="portrait-content">
+<div class="portrait-icon"><i class="fa-solid fa-landmark"></i></div>
+<h3>POLITICAL<br>ANALYSIS</h3>
+<p>RESEARCH • CONTEXT • INSIGHT</p>
+</div>
+</div>
+<div class="floating float1"><i class="fa-solid fa-chart-line"></i><div><strong>Research</strong><br><small>Evidence-based</small></div></div>
+<div class="floating float2"><i class="fa-solid fa-scale-balanced"></i><div><strong>Perspective</strong><br><small>Beyond headlines</small></div></div>
+</div>
+</div>
+</section>
+
+<div class="marquee"><div class="marquee-track">
+<span>INDIAN POLITICS</span><b>✦</b><span>PUBLIC POLICY</span><b>✦</b><span>GOVERNANCE</span><b>✦</b><span>GEOPOLITICS</span><b>✦</b><span>ELECTIONS</span><b>✦</b><span>POLITICAL COMMUNICATION</span><b>✦</b><span>INDIAN POLITICS</span><b>✦</b><span>PUBLIC POLICY</span><b>✦</b>
+</div></div>
+
+<section class="section" id="about">
+<div class="container">
+<p class="number">01 / ABOUT</p>
+<h2>Politics isn't just<br><span>what happens.</span> It's why it happens.</h2>
+<div class="about-grid">
+<div class="about-image"><div class="columns"><div class="column"></div><div class="column"></div><div class="column"></div></div></div>
+<div class="about-content">
+<p class="lead">I believe meaningful political analysis begins with curiosity and ends with clarity.</p>
+<p>My interest lies in understanding the relationship between political institutions, society, economics and public opinion.</p>
+<p>Rather than simply following headlines, I enjoy exploring the context behind political developments and communicating those insights in a clear and accessible way.</p>
+<p>As I continue building my career in political analysis, I'm developing skills in research, data interpretation, political communication and policy analysis.</p>
+<div class="signature"><strong>TM</strong><p>Tushar Madhyani<br><small>Aspiring Political Analyst</small></p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section expertise" id="expertise">
+<div class="container">
+<div class="section-top"><div><p class="number">02 / EXPERTISE</p><h2>Areas I <span>Explore</span></h2></div><p class="intro">Exploring political questions through research, context and multiple perspectives.</p></div>
+<div class="expertise-grid">
+<div class="expertise-card"><span class="card-no">01</span><div class="icon"><i class="fa-solid fa-landmark"></i></div><h3>Indian Politics</h3><p>Political parties, electoral trends, leadership, political movements and the changing Indian electorate.</p><span class="explore">EXPLORE →</span></div>
+<div class="expertise-card"><span class="card-no">02</span><div class="icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>Public Policy</h3><p>Understanding how policy decisions are developed, implemented and experienced by citizens.</p><span class="explore">EXPLORE →</span></div>
+<div class="expertise-card"><span class="card-no">03</span><div class="icon"><i class="fa-solid fa-globe"></i></div><h3>Geopolitics</h3><p>International relations, diplomacy, strategic interests and India's position in a changing world.</p><span class="explore">EXPLORE →</span></div>
+<div class="expertise-card"><span class="card-no">04</span><div class="icon"><i class="fa-solid fa-chart-simple"></i></div><h3>Political Data</h3><p>Using data, surveys and public information to identify patterns and support political analysis.</p><span class="explore">EXPLORE →</span></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="research">
+<div class="container">
+<div class="center"><p class="number">03 / RESEARCH</p><h2>Selected <span>Research</span></h2><p>Questions I'm currently interested in exploring.</p></div>
+<div class="research-list">
+<div class="research"><div class="research-no">01</div><div><span class="category">INDIAN POLITICS</span><h3>The Changing Indian Voter: Beyond Traditional Political Identities</h3><p>Exploring how younger voters, urbanisation, social media and emerging political issues are influencing electoral behaviour.</p></div><div class="research-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div>
+<div class="research"><div class="research-no">02</div><div><span class="category">PUBLIC POLICY</span><h3>From Policy to People: Understanding the Governance Gap</h3><p>Looking at the difference between policy design, implementation and its impact on citizens.</p></div><div class="research-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div>
+<div class="research"><div class="research-no">03</div><div><span class="category">GEOPOLITICS</span><h3>India's Strategic Position in a Multipolar World</h3><p>An exploration of India's relationships with major global powers and its evolving strategic priorities.</p></div><div class="research-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div>
+</div>
+</div>
+</section>
+
+<section class="quote"><div class="container"><div class="quote-mark">“</div><blockquote>Good political analysis doesn't tell people <em>what to think.</em> It helps them understand <em>why they think it.</em></blockquote><small>— MY APPROACH TO POLITICAL ANALYSIS</small></div></section>
+
+<section class="section insights" id="insights">
+<div class="container">
+<div class="section-top"><div><p class="number">04 / INSIGHTS</p><h2>Political <span>Perspectives</span></h2></div></div>
+<div class="cards">
+<div class="article"><div class="article-image"><span>ANALYSIS</span></div><div class="article-content"><span class="date">AUGUST 2026 • 06 MIN READ</span><h3>Social Media & The New Age of Political Communication</h3><p>How digital platforms are changing the way political ideas reach and influence citizens.</p><a href="#" class="read">READ ANALYSIS →</a></div></div>
+<div class="article"><div class="article-image"><span>POLICY</span></div><div class="article-content"><span class="date">JULY 2026 • 05 MIN READ</span><h3>Why Public Policy Needs Better Communication</h3><p>Understanding why effective communication matters in public policy.</p><a href="#" class="read">READ ANALYSIS →</a></div></div>
+<div class="article"><div class="article-image"><span>GEOPOLITICS</span></div><div class="article-content"><span class="date">JUNE 2026 • 07 MIN READ</span><h3>Understanding India's Changing Global Role</h3><p>Exploring India's evolving position in international affairs.</p><a href="#" class="read">READ ANALYSIS →</a></div></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container journey-grid">
+<div><p class="number">05 / JOURNEY</p><h2>Building a career around <span>curiosity.</span></h2><p class="journey-description">Every research question is an opportunity to learn, challenge assumptions and develop a deeper understanding of the world around us.</p></div>
+<div class="timeline">
+<div class="timeline-item"><div class="dot"></div><span>2024 — PRESENT</span><h3>Political Research & Analysis</h3><p>Independent research on Indian politics, public policy and governance.</p></div>
+<div class="timeline-item"><div class="dot"></div><span>2022 — 2025</span><h3>Bachelor's Degree</h3><p>Political Science / Related Discipline.</p></div>
+<div class="timeline-item"><div class="dot"></div><span>ONGOING</span><h3>Learning & Development</h3><p>Developing research, writing, data analysis and political communication skills.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section skills">
+<div class="container"><p class="number">SKILLS</p><h2>What I <span>Bring</span></h2>
+<div class="skills-grid">
+<div><div class="skill-title"><span>Political Research</span><b>90%</b></div><div class="progress"><span style="width:90%"></span></div></div>
+<div><div class="skill-title"><span>Policy Analysis</span><b>82%</b></div><div class="progress"><span style="width:82%"></span></div></div>
+<div><div class="skill-title"><span>Political Writing</span><b>88%</b></div><div class="progress"><span style="width:88%"></span></div></div>
+<div><div class="skill-title"><span>Data Interpretation</span><b>75%</b></div><div class="progress"><span style="width:75%"></span></div></div>
+<div><div class="skill-title"><span>Public Speaking</span><b>80%</b></div><div class="progress"><span style="width:80%"></span></div></div>
+<div><div class="skill-title"><span>Political Communication</span><b>85%</b></div><div class="progress"><span style="width:85%"></span></div></div>
+</div></div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container contact-grid">
+<div><p class="number">06 / CONTACT</p><h2>Let's talk about <span>politics.</span></h2><p class="contact-description">Interested in political research, policy discussions, collaborations or simply exchanging perspectives? I'd love to hear from you.</p><a href="mailto:tussi567@gmail.com" class="email">tussi567@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+<div>
+<a href="#" class="social"><i class="fa-brands fa-linkedin-in"></i><div class="social-text"><small>CONNECT</small><strong>LinkedIn</strong></div><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+<a href="#" class="social"><i class="fa-brands fa-x-twitter"></i><div class="social-text"><small>FOLLOW</small><strong>X / Twitter</strong></div><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+<a href="#" class="social"><i class="fa-brands fa-instagram"></i><div class="social-text"><small>FOLLOW</small><strong>Instagram</strong></div><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</div>
+</div>
+</section>
+
+<footer><div class="container footer"><a href="#home" class="logo">TM<span>.</span></a><p>© 2026 TUSHAR MADHYANI</p><a href="#home" class="top">BACK TO TOP ↑</a></div></footer>
+
+<script>
+const menu=document.getElementById("menu"),navLinks=document.getElementById("navLinks");
+menu.addEventListener("click",()=>{navLinks.classList.toggle("open");const icon=menu.querySelector("i");icon.classList.toggle("fa-bars");icon.classList.toggle("fa-xmark")});
+document.querySelectorAll(".nav-links a").forEach(link=>link.addEventListener("click",()=>navLinks.classList.remove("open")));
+window.addEventListener("scroll",()=>{let current="";document.querySelectorAll("section[id]").forEach(section=>{if(scrollY>=section.offsetTop-150&&scrollY<section.offsetTop+section.offsetHeight)current=section.id});document.querySelectorAll(".nav-links a").forEach(link=>link.classList.toggle("active",link.getAttribute("href")==="#"+current))});
+</script>
+
+</body>
+</html>
